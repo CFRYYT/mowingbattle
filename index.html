@@ -1,24 +1,74 @@
 <!DOCTYPE html>
 <html>
-   <head>
-      <title>割草大作战</title>
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <!-- 引入 Bootstrap -->
-      <link href="http://apps.bdimg.com/libs/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet">
+    
+    <head>
+        <title>施工中(￣▽￣")</title>
+        <style>
+		body
+{
+background-image: url(https://raw.githubusercontent.com/CFRYYT/mowingbattle/master/bg.jpeg);
+}
+		div.ex
+{
+width:810px;
+background-color:rgba(192,192,192,0.8);
 
-      <!-- HTML5 Shim 和 Respond.js 用于让 IE8 支持 HTML5元素和媒体查询 -->
-      <!-- 注意： 如果通过 file://  引入 Respond.js 文件，则该文件无法起效果 -->
-      <!--[if lt IE 9]>          <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>          <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>       <![endif]-->
-   <style>
-	body{ background-image: url(https://raw.githubusercontent.com/CFRYYT/mowingbattle/master/bg.jpeg) }	
-	</style>
-   </head>
-   <body>
-      <h1 style="font-family:微软雅黑"}>施工中！！！</h1>
+}
+		.a
+{
+font-size:14px;
+color:white;
+font-family:黑体;
+}
+		.b
+{
+font-size:32px;
+color:white;
+font-family:黑体;
+}
+		.c
+{
+font-size:18px;
+color:grey;
+font-family:黑体;
+}
+		.face
+{
+border-color: black;    
+border-width: 5px;    
+border-style: solid; 
+border-radius: 10px;
+}
+        </style>
+    </head>
+    
+    <body >
+        <center><div class="ex">
+             <h1 style="font-family:宋体" >割草大作战</h1>
+			 <canvas id="canva" width="810px" height="600px">
+				<!--游戏就装在画布里面！-->
+			 </canvas>
+			 
+			 <table width="810" border="0" style="background-color:rgba(255,165,0,0.5)">
+				<tr>
+				<th rowspan="2" style="background-color:rgba(255,165,0,0.8)"><img src="http://thirdqq.qlogo.cn/g?b=sdk&k=Srkn5yCCw3ia8wXqSkP8sBQ&s=100&t=1512800598" class="face" /></th>
+				<td class="b"style="background-color:rgba(255,165,0,0.7)">铭山</td>
+				</tr>
+				<tr>
+                <td class="c" style="background-color:rgba(255,165,0,0.6)">初二学生一个<b>......</b></td>
+				</tr>
+			 </table>
+			 
+			 <p class="a">本网站尚未使用Bootstrap，因此移动端浏览时请自行调整大小。</p>
+			 <p class="a">本网站系个人开发，有不好之处，也正常......</p>
+        </div></center>
+		<script type="text/javascript">
+		var c=document.getElementById("canva");
+		var ctx=c.getContext("2d");
+		ctx.fillStyle="rgba(0,0,0,0.1)";
+		ctx.fillRect(5,0,800,600);
+		</script>
+        
+    </body>
 
-      <!-- jQuery (Bootstrap 的 JavaScript 插件需要引入 jQuery) -->
-      <script src="https://code.jquery.com/jquery.js"></script>
-      <!-- 包括所有已编译的插件 -->
-      <script src="js/bootstrap.min.js"></script>
-   </body>
 </html>
